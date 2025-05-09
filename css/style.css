@@ -2,3 +2,18 @@
     float: left;
     margin-right: 10px;
 }
+#features {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+.nuclepLogo {
+    float: left;
+    margin-right: 10px;
+}
+#redesSociais {
+    margin-top: 3em;
+}
+.lotusLogo{
+    width: 50px;
+    height: 45px;
+}

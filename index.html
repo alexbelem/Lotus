@@ -7,183 +7,206 @@
   <link rel= "stylesheet" href= "css/style.css">
 </head>
 <body>
+<!--Header-->
 
-<div class="container" id="header">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom header">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" aria-hidden="true"></svg>
-      <img src="imagens/Logo.png" alt="Logo da Lótus" height="50">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="imagens/lotus_logo.png" alt="Logo da Lótus" class="lotusLogo d-inline-block align-text-top"/> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary">Mensagem</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary">Introdução</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary">Serviços Oferecidos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary">Diferenciais Competitivos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-secondary">Fale conosco</a></li>
-    </ul>
-  </header>
-</div>
-
-<div class="container col-xxl-8 px-4 py-5"> <!--heroe-->
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-    <div class="col-10 col-sm-8 col-lg-6">
-      <img src="imagens/psi_notas.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-    <div class="col-lg-6"> <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Venha se consultar com a gente</h1>
-      <p class="lead">Às vezes não precisamos de um plano, precisamos apenas tirar um tempinho para cuidar da nossa mente e do nosso corpo.</p>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+  </div>
+</nav>
+
+
+
+<!--Heroe-->
+<section id = "heroe">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="imagens/psi_notas.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
-    </div> </div>
-</div>
-
-<div class="container px-4 py-5" id="icon-grid"> <!--Features-->
-  <h2 class="pb-2 border-bottom">Serviços oferecidos</h2>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-        <use xlink:href="#bootstrap"></use>
-      </svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terapia cognitivo comportamental</h3>
-        <p>Paragraph of text beneath the heading to explain the heading.</p>
-      </div> </div> <div class="col d-flex align-items-start">
-    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-      <use xlink:href="#cpu-fill"></use>
-    </svg>
-    <div>
-      <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Avaliação neuropsicológica</h3>
-      <p>Altas habilidades,transtornos do neurodesenvolvimento e demências.</p>
-    </div> </div> <div class="col d-flex align-items-start">
-    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-      <use xlink:href="#calendar3"></use>
-    </svg>
-    <div>
-      <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Reabilitação neuropsicológica</h3>
-      <p>Paragraph of text beneath the heading to explain the heading.</p>
-    </div>
+      <div class="col-lg-6"> <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Venha se consultar com a gente</h1>
+        <p class="lead">Às vezes não precisamos de um plano, precisamos apenas tirar um tempinho para cuidar da nossa mente e do nosso corpo.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        </div>
+      </div> </div>
   </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#home">
-      </use>
-      </svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Treino e estimulação cognitiva</h3>
-        <p>Individual ou em grupo.</p>
-      </div> </div> <div class="col d-flex align-items-start">
-    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-      <use xlink:href="#speedometer2"></use>
-    </svg>
-    <div>
-      <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terapia clínica em consultório</h3>
-      <p>Paragraph of text beneath the heading to explain the heading.</p>
-    </div>
-  </div>
-    <div class="col d-flex align-items-start">
+</section>
+<!--Features-->
+<section id="features">
+  <div class="container px-4 py-5 features" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Serviços oferecidos</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terapia cognitivo comportamental</h3>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div> </div> <div class="col d-flex align-items-start">
       <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-        <use xlink:href="#toggles2"></use>
+        <use xlink:href="#cpu-fill"></use>
       </svg>
       <div>
-        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Análise dos aspectos psicossociais relacionados ao trabalho</h3>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Avaliação neuropsicológica</h3>
+        <p>Altas habilidades,transtornos do neurodesenvolvimento e demências.</p>
+      </div> </div> <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+        <use xlink:href="#calendar3"></use>
+      </svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Reabilitação neuropsicológica</h3>
         <p>Paragraph of text beneath the heading to explain the heading.</p>
       </div>
     </div>
-    <div class="col d-flex align-items-start">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#home">
+        </use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Treino e estimulação cognitiva</h3>
+          <p>Individual ou em grupo.</p>
+        </div> </div> <div class="col d-flex align-items-start">
       <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
-        <img src="imagens/caixa%20saude.png" class ="caixaLogo rounded" height="70">
+        <use xlink:href="#speedometer2"></use>
       </svg>
       <div>
-        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Atendimento em convênio</h3>
-        <p>Saúde Caixa.</p>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terapia clínica em consultório</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
       </div>
     </div>
-    <div class="col d-flex align-items-start">
-      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#tools"></use></svg>
-      <div>
-        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">LGBTQIA+ Friendly 🌈</h3>
-        <p>Profissionais capacitados e interados com dificuldades e peculiaridades da comunidade.</p>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <use xlink:href="#toggles2"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Análise dos aspectos psicossociais relacionados ao trabalho</h3>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <img src="imagens/caixa%20saude.png" class ="caixaLogo rounded" height="70">
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Atendimento em convênio</h3>
+          <p>Saúde Caixa.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <img src="imagens/nuclep_logo.jpg" class ="nuclepLogo rounded" height="70">
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aceitamos Nuclep convênio</h3>
+          <p></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="container">
-  <footer class="py-5">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="index.html#header" class="nav-link p-0 text-body-secondary">Home</a>
-          </li> <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-        </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-          </li>
-          <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-          </li> <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-        </li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-          </li>
-          <li class="nav-item mb-2">
+</section>
+<!--Rodapé-->
+<section id="rodape">
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html#header" class="nav-link p-0 text-body-secondary">Home</a>
+            </li> <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
           </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-          </li>
-          <li class="nav-item mb-2">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-          </li>
-          <li class="nav-item mb-2">
+            </li> <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-body-secondary">About</a>
           </li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Entre em contato conosco</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="email" class="visually-hidden">Email address</label>
+              <input id="email" type="email" class="form-control" placeholder="Email">
+              <button class="btn btn-primary" type="button">Enviar</button>
+            </div>
+          </form>
+          <div id="redesSociais">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height='32' id="whatsAppLogo"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height='32'><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"> <p>© 2025 Company, Inc. All rights reserved.</p> <ul class="list-unstyled d-flex"> <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li> <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li> </ul> </div> </footer> </div>
-
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"> <p>© 2025 Company, Inc. All rights reserved.</p> <ul class="list-unstyled d-flex"> <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li> <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li> </ul> </div> </footer> </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
