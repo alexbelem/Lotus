@@ -1,196 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Lótus Saúde Mental e Ocupacional</title>
+  <meta charset="UTF-8">
+  <title>Lótus Saúde Mental e Ocupacional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel= "stylesheet" href= "css/style.css">
 </head>
 <body>
+<!--Header-->
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#apresentacao">Apresentação</a></li>
-                <li><a href="#mensagem">Mensagem</a></li>
-                <li><a href="#introducao">Introdução</a></li>
-                <li><a href="#servicos">Serviços Oferecidos</a></li>
-                <li><a href="#diferenciais">Diferenciais Competitivos</a></li>
-                <li><a href="#nossoendereço">Nosso Endereço</a></li>
-				<li><a href="#faleconosco">Fale Conosco</a></li>
-            </ul>
-        </nav>
-		<div class="social-icons">
-			<a href=" https://alexbelem.github.io/minha-primeira-pagina/" target="_blank"><i class="fas fa-globe"></i></a>
-			<a href="https://www.instagram.com/lotussmesst" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="mailto:lotussaudementaleocupaciona@gmail.com?subject=Fale%20Conosco"><i class="far fa-envelope"></i></a>
-			<a href="https://wa.me/5521967759758" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i></a>
-			
-		</div>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="imagens/lotus_logo.png" alt="Logo da Lótus" class="lotusLogo d-inline-block align-text-top"/> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <section id="apresentacao">
-        <!-- Conteúdo da Apresentação Comercial -->
-		<br><br><br>
-		<a href=" https://alexbelem.github.io/minha-primeira-pagina/" target="_blank"><img src="./imagens/apresentacao3.png"></a>
-		<hr>
-    </section>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-    <section id="mensagem">
-        <!-- Conteúdo da Mensagem -->
-		<div class="mensagem-container">
-			<img src="./imagens/mensagem.png">
-				<!--<div class="anima_mensagem">
-					<img src="./imagens/mensagem.png">
-				</div>-->
-		</div>			
-    </section>
-	<hr>
-	
-    <section id="introducao">
-        <br><br><br>
-		<!-- Conteúdo da Introdução -->
-		<div class="introducao-container">
-			<div class="introducao">
-				<h3>Introdução</h3>
-					<p>Sabemos que para termos uma equipe coesa e feliz com o trabalho, temos que proporcionar o seu bem estar.</p>
-					<p> </p>
-					<p> </p>
-					<p> </p>
-					<p>Estamos neste caminho desde a nossa graduação e a criação da Lótus Saúde Mental e Ocupacional veio para unir os nossos conhecimentos e experiência adquiridos nestes 35 anos de formação educacional e comportamental.</p>					
-					<p> </p>
-					<p> </p>
-					<p> </p>
-					<p>Esperamos que estejamos no caminho certo para proporcionar uma consciência de que trabalhador satisfeito é resultado positivo garantido.</p>
-			
-			</div>
-			<div class="anima_introducao">
-				<img src="./imagens/img1.png" class="fade" alt="Imagem 1">
-				<img src="./imagens/janeiro.png" class="fade" alt="janeiro">
-				<img src="./imagens/img2.png" class="fade" alt="Imagem 2">
-				<img src="./imagens/img3.png" class="fade" alt="Imagem 3">
-				<img src="./imagens/img4.png" class="fade" alt="Imagem 4">
-			    <img src="./imagens/setembro.png" class="fade" alt="setembro">
-			</div>
-		</div>
-    </section>
-	<hr>
-	
-    <section id="servicos">
-		<br><br><br>
-		<h2>Serviços Oferecidos</h2>
-		<div class="servicos-container">
-			<div class="psicologia">
-				<h3>Psicologia</h3>			
-				<ul> 
-					<li>Terapia Cognitivo Comportamental</li>
-					<li>Avaliação Neuropsicológica, Altas habilidades,Transtornos do neurodesenvolvimento e Demências</li>
-					<li>Reabilitação neuropsicológica</li>
-					<li>Treino e Estimulação Cognitiva (individual e/ou em grupo)</li>
-					<li>Terapia Clínica em Consultório</li>
-					<li>Análise dos aspectos psicossociais relacionados ao trabalho</li>
-				    <li>ATENDIMENTO EM CONVÊNIO SAÚDE CAIXA<li> 
-				</ul><br><br><br>
-				<img src="./imagens/fundopsicologia.png">
-				<img src="./imagens/caixa saude.png">
-			</div>
-			
-			<div class="seguranca-trabalho">
-				<h3>Segurança do Trabalho</h3>
-				<ul>
-					<li>Consultoria e Assessoria em Segurança do Trabalho</li>
-					<li>Assessoria no Atendimento de Notificações do Ministério do Trabalho</li>
-					<li>Assessoria Técnica em Processos Trabalhistas</li>
-					<li>Elaboração de Programas Exigidos pelas normas regulamentadoras</li>
-					<li>Elaboração de Procedimentos em Segurança do Trabalho</li>
-                    <li>Auditoria interna 45001-Requisitos legais</li> 					
-				</ul><br>
-				<img src="./imagens/fundosegtrabalho.png">
-				<img src="./imagens/qrcode.png">
-			</div>
-		</div>		
-	</section>
-	<hr>
 
-    <section id="diferenciais">
-        <!-- Conteúdo dos Diferenciais Competitivos -->
-		<br><br><br>
-		<h2>Diferenciais Competitivos</h2>
-		<div class="diferenciais-container">
-			<div class="criatividade">
-				<img src="./imagens/criatividade.png"> 
-				<h3>Criatividade</h3>
-				<p>A capacidade de trazer ideias inovadoras para o desenvolvimento de equipes de trabalho.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp</p>
-			</div>
-			<div class="experiencia">
-				<img src="./imagens/experiencia.png"> 
-				<h3>Experiência e Expertise</h3>
-				<p>Demonstrando a experiência e conhecimento sólido no campo da saúde mental e de segurança do trabalhador.</p>
-			</div>
-			<div class="entrega">
-				<img src="./imagens/entrega.png"> 
-				<h3>Entrega Pontual</h3>
-				<p>Cumprindo prazos estabelecidos, garantindo que os trabalhos sejam entregues em tempo hábil.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp</p>
-			</div>
-			<div class="custoBeneficio">
-				<img src="./imagens/custoBeneficio.png"> 
-				<h3>Custo-Benefício</h3>
-				<p>Oferecendo serviços de qualidade a um preço competitivo, garantindo que os clientes obtenham um excelente retorno sobre seu investimento.</p>
-			</div>
-			
-			
-		</div>		
-    </section>
-	<hr>
 
-    <section id="nossoendereço">
-        <!-- Conteúdo das Dúvidas -->
-		<br><br><br>
-		<h2>Nosso Endereço</h2>
-			<p>Rua Dr. Borman, 23 Sala 816 - Niterói / RJ</p>
-			<div id="mapa">				
-				<a href="https://bit.ly/mapa_lotus" target="_blank"><img src="./imagens/mapa.png"></a>
-			</div>
-		<hr>
-    </section>
-	
-	<section id="faleconosco">
-        <!-- Conteúdo do Fale Conosco -->
-		<br><br><br>
-		<h2>Fale Conosco</h2>
-			
-			<h3>Envie uma mensagem:</h3>
-			<form id="contato-form">
-				<label for="nome">Nome:</label>
-				<input type="text" id="nome" name="nome" required>
-
-				<label for="telefone">Telefone:</label>
-				<input type="tel" id="telefone" name="telefone" required>
-
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-
-				<label for="mensagem">Mensagem:</label>
-				<textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-				<button type="button" onclick="enviarWhatsApp()">Enviar pelo WhatsApp</button>
-				<button type="button" onclick="enviarEmail()">Enviar Email</button>
-			</form>
-			<h3>Telefones</h3>
-				<p><a href="https://wa.me/5521967759758" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i>21 96775-9758</a> / <a href="https://wa.me/5521998059758" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i>21 99805-9758</a> / <a href="https://wa.me/5521999113503" target="_blank" class="whatsapp-link"><i class="fab fa-whatsapp"></i>21 99911-3503</a></p> 
-			<h3>Email</h3>
-				<p><a href="mailto:lotussaudementaleocupaciona@gmail.com?subject=Fale%20Conosco">lotussaudementaleocupaciona@gmail.com<i class="far fa-envelope"></i></a></p>
-		        <p><a href="mailto:alexandre@lotussmst.com.br?subject=Fale%20Conosco">alexandre@lotussmst.com.br<i class="far fa-envelope"></i></a></p>
-		        <p><a href="mailto:psibia@lotussmst.com.br?subject=Fale%20Conosco">psibia@lotussmst.com.br<i class="far fa-envelope"></i></a></p>
-		<hr>
-    </section>
-
-    <footer>
-        <p>Desenvolvido por Alexandre Belem e Anthony Freitas</p>
-        <p>Todos os direitos reservados, 2024</p>
-    </footer>
-
-    <script src="./js/script.js"></script>
+<!--Heroe-->
+<section id = "heroe">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="imagens/psi_notas.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6"> <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Venha se consultar com a gente</h1>
+        <p class="lead">Às vezes não precisamos de um plano, precisamos apenas tirar um tempinho para cuidar da nossa mente e do nosso corpo.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start"> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        </div>
+      </div> </div>
+  </div>
+</section>
+<!--Features-->
+<section id="features">
+  <div class="container px-4 py-5 features" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Serviços oferecidos</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terapia cognitivo comportamental</h3>
+          <p>A Terapia Cognitivo-Comportamental (TCC) é uma abordagem psicológica
+            estruturada,que busca identificar e modificar pensamentos e comportamentos
+            disfuncionais que contribuem para problemas emocionais e de comportamento.
+          </p>
+        </div> </div> <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+        <use xlink:href="#cpu-fill"></use>
+      </svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Avaliação neuropsicológica</h3>
+        <p>Altas habilidades,transtornos do neurodesenvolvimento e demências.</p>
+      </div> </div> <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+        <use xlink:href="#calendar3"></use>
+      </svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Reabilitação neuropsicológica</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true"><use xlink:href="#home">
+        </use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Treino e estimulação cognitiva</h3>
+          <p>Individual ou em grupo.</p>
+        </div> </div> <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+        <use xlink:href="#speedometer2"></use>
+      </svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Terapia clínica em consultório</h3>
+        <p>Paragraph of text beneath the heading to explain the heading.</p>
+      </div>
+    </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <use xlink:href="#toggles2"></use>
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Análise dos aspectos psicossociais relacionados ao trabalho</h3>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <img src="imagens/caixa%20saude.png" class ="caixaLogo rounded" height="70">
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Atendimento em convênio</h3>
+          <p>Saúde Caixa.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em" aria-hidden="true">
+          <img src="imagens/nuclep_logo.jpg" class ="nuclepLogo rounded" height="70">
+        </svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aceitamos Nuclep convênio</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Rodapé-->
+<section id="rodape">
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html#header" class="nav-link p-0 text-body-secondary">Home</a>
+            </li> <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li> <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Entre em contato conosco</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="email" class="visually-hidden">Email address</label>
+              <input id="email" type="email" class="form-control" placeholder="Email">
+              <button class="btn btn-primary" type="button">Enviar</button>
+            </div>
+          </form>
+          <div id="redesSociais">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height='32' id="whatsAppLogo"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height='32'><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"> <p>© 2025 Company, Inc. All rights reserved.</p> <ul class="list-unstyled d-flex"> <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li> <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li> </ul> </div> </footer> </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
