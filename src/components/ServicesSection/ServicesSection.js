@@ -10,8 +10,12 @@ import SelfImprovementIcon from '@mui/icons-material/SelfImprovement'; // <-- SU
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-import caixaLogo from '../assets/caixa saude.png';
-import nuclepLogo from '../assets/nuclep_logo.jpg';
+import caixaLogo from '../../assets/caixa saude.png';
+import nuclepLogo from '../../assets/nuclep_logo.jpg';
+
+
+
+
 
 // Array de dados com os ícones corretos
 const services = [
@@ -29,11 +33,6 @@ const services = [
         icon: <SelfImprovementIcon fontSize="large" color="primary" />, // <-- ÍCONE CORRIGIDO
         title: 'Reabilitação Neuropsicológica',
         text: 'Intervenções para recuperar ou compensar déficits cognitivos.'
-    },
-    {
-        icon: <SchoolIcon fontSize="large" color="primary" />,
-        title: 'Treino e Estimulação Cognitiva',
-        text: 'Programas individualizados ou em grupo para aprimorar funções cognitivas.'
     },
     {
         icon: <WorkIcon fontSize="large" color="primary" />,

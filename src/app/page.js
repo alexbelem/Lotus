@@ -1,12 +1,13 @@
 // src/app/page.js
 import HeroSection from '../components/HeroSection';
-import ServicesSection from '../components/ServicesSection';
+import {FeaturesCards} from "@/components/ServicesSection/FeaturesCards";
 
 export default function HomePage() {
     return (
         <>
             <HeroSection />
-            <ServicesSection />
+            <FeaturesCards />
+
         </>
     );
 }

@@ -1,4 +1,5 @@
 // src/components/Footer.js
+'use client';
 import { Box, Container, Grid, Typography, Link, TextField, Button } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
