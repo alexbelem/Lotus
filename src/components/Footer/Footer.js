@@ -1,49 +1,102 @@
-// src/components/Footer.js
+// src/components/Footer/Footer.jsx
 'use client';
-import { Box, Container, Grid, Typography, Link, TextField, Button } from '@mui/material';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import InstagramIcon from '@mui/icons-material/Instagram';
 
-function Footer() {
+import { useState } from 'react';
+import { Text, Container, ActionIcon, Group, TextInput, Button } from '@mantine/core';
+import { IconBrandInstagram, IconBrandWhatsapp, IconAlertTriangle } from '@tabler/icons-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import logoLotus from '../../assets/Lotus_icone.png';
+import classes from './Footer.module.css';
+
+const data = [
+    {
+        title: 'Navegue',
+        links: [
+            { label: 'Home', link: '/' },
+            { label: 'Serviços', link: '/servicos' },
+            { label: 'Sobre Nós', link: '/sobre' },
+        ],
+    },
+    {
+        title: 'Legal',
+        links: [
+            { label: 'Termos de Uso', link: '/termos' },
+            { label: 'Política de Privacidade', link: '/privacidade' },
+        ],
+    },
+];
+
+export function Footer() {
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (!email.includes('@') || email.trim() === '') {
+            setError('Por favor, insira um e-mail válido.');
+        } else {
+            setError('');
+            console.log('E-mail enviado:', email);
+        }
+    };
+
+    const groups = data.map((group) => (
+        <div className={classes.wrapper} key={group.title}>
+    <Text className={classes.title}>{group.title}</Text>
+    {group.links.map((link, index) => (
+        <Text key={index} className={classes.link} component="a" href={link.link}>
+        {link.label}
+        </Text>
+    ))}
+    </div>
+));
+
     return (
-        <Box component="footer" sx={{ bgcolor: 'grey.100', py: 6, mt: 8 }}>
-            <Container maxWidth="lg">
-                <Grid container spacing={5}>
-                    <Grid xs={12} sm={4}>
-                        <Typography variant="h6" gutterBottom>Clínica Lótus</Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Cuidando da sua saúde mental com profissionalismo, empatia e as melhores técnicas disponíveis.
-                        </Typography>
-                    </Grid>
-                    <Grid xs={6} sm={2}>
-                        <Typography variant="h6" gutterBottom>Navegue</Typography>
-                        <Link href="#" color="inherit" display="block" underline="hover">Home</Link>
-                        <Link href="#" color="inherit" display="block" underline="hover">Serviços</Link>
-                        <Link href="#" color="inherit" display="block" underline="hover">Sobre</Link>
-                        <Link href="#" color="inherit" display="block" underline="hover">Contato</Link>
-                    </Grid>
-                    <Grid xs={12} sm={6}>
-                        <Typography variant="h6" gutterBottom>Entre em Contato</Typography>
-                        <Typography variant="body2" color="text.secondary" gutterBottom>
-                            Deixe seu e-mail e retornaremos o mais breve possível.
-                        </Typography>
-                        <Box component="form" sx={{ display: 'flex', gap: 1, mt: 2 }}>
-                            <TextField size="small" variant="outlined" placeholder="Seu e-mail" fullWidth />
-                            <Button variant="contained" type="submit">Enviar</Button>
-                        </Box>
-                    </Grid>
-                </Grid>
-                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 6, pt: 3, borderTop: 1, borderColor: 'divider' }}>
-                    <Typography variant="body2" color="text.secondary">
-                        © {new Date().getFullYear()} Clínica Lótus. Todos os direitos reservados.
-                    </Typography>
-                    <Box sx={{ mt: { xs: 3, sm: 0 } }}> {/* Adicionamos margem só em telas pequenas */}
-                        <Link href="#" color="inherit" sx={{ mr: 2 }}><WhatsAppIcon /></Link>
-                        <Link href="#" color="inherit"><InstagramIcon /></Link>
-                    </Box>
-                </Box>
-            </Container>
-        </Box>
-    );
+        <footer className={classes.footer}>
+        <Container className={classes.inner}>
+        <div className={classes.logo}>
+        <Link href="/">
+        <Image src={logoLotus} alt="Logo da Clínica Lotus" height={40} />
+    </Link>
+    <Text size="xs" c="dimmed" className={classes.description}>
+        Cuidando da sua saúde com profissionalismo e empatia.
+    </Text>
+    </div>
+    <div className={classes.groups}>
+        {groups}
+    {/* Formulário de e-mail como a última coluna */}
+    <div className={classes.wrapper}>
+    <Text className={classes.title}>Entre em Contato</Text>
+    <form onSubmit={handleSubmit}>
+    <TextInput
+        placeholder="Seu e-mail"
+    mb="sm"
+    value={email}
+    onChange={(event) => setEmail(event.currentTarget.value)}
+    error={error}
+    classNames={{ input: error ? classes.invalid : '' }}
+    />
+    <Button type="submit" size="sm" fullWidth>
+    Enviar
+    </Button>
+    </form>
+    </div>
+    </div>
+    </Container>
+    <Container className={classes.afterFooter}>
+    <Text c="dimmed" size="sm">
+          © {new Date().getFullYear()} Clínica Lótus. Todos os direitos reservados.
+    </Text>
+    <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
+    <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="#">
+    <IconBrandWhatsapp size={18} stroke={1.5} />
+    </ActionIcon>
+    <ActionIcon size="lg" color="gray" variant="subtle" component="a" href="#">
+    <IconBrandInstagram size={18} stroke={1.5} />
+    </ActionIcon>
+    </Group>
+    </Container>
+    </footer>
+);
 }
-export default Footer;

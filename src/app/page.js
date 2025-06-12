@@ -1,5 +1,5 @@
 // src/app/page.js
-import HeroSection from '../components/HeroSection';
+import HeroSection from '../components/HeroSection/HeroSection';
 import {FeaturesCards} from "@/components/ServicesSection/FeaturesCards";
 
 export default function HomePage() {
@@ -7,7 +7,6 @@ export default function HomePage() {
         <>
             <HeroSection />
             <FeaturesCards />
-
         </>
     );
 }

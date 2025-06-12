@@ -1,7 +1,7 @@
 // src/app/layout.js
 import ThemeRegistry from '../components/ThemeRegistry';
 import { HeaderSimple } from '../components/Header/HeaderSimple';
-import Footer from '../components/Footer/Footer';
+import { Footer } from '../components/Footer/Footer';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import {theme} from "@/app/theme";

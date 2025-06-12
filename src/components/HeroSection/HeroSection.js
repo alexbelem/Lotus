@@ -3,7 +3,7 @@
 
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
 import Image from 'next/image';
-import heroImage from '../assets/psi_notas.jpg';
+import heroImage from '../../assets/psi_notas.jpg';
 
 function HeroSection() {
     return (
