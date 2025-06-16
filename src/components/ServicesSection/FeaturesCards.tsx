@@ -1,5 +1,8 @@
+// src/components/FeaturesCards/FeaturesCards.jsx
 "use client";
-import { IconUser} from '@tabler/icons-react';
+
+import React from 'react'; // A LINHA QUE FALTAVA
+import { IconUser } from '@tabler/icons-react';
 import { RiMentalHealthLine } from "react-icons/ri";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
 import {
@@ -38,6 +41,7 @@ const mockdata = [
     },
 ];
 
+// Corrigi o nome da função para exportação.
 export function FeaturesCards() {
     const theme = useMantineTheme();
     const features = mockdata.map((feature) => (
@@ -53,7 +57,6 @@ export function FeaturesCards() {
     ));
 
     return (
-        // AQUI APLICAMOS A CLASSE PARA A SEÇÃO
         <div className={classes.featuresSection}>
             <Container size="lg" py="xl">
                 <Group justify="center">
@@ -78,3 +81,6 @@ export function FeaturesCards() {
         </div>
     );
 }
+
+// Adicione uma exportação default se preferir
+export default FeaturesCards;

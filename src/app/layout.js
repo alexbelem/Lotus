@@ -5,6 +5,7 @@ import { Footer } from '../components/Footer/Footer';
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import {theme} from "@/app/theme";
+import { WhatsAppButton} from "@/components/WhatsAppButton/WhatsAppButton";
 
 export const metadata = {
     title: 'Lótus Saúde Mental e Ocupacional',
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
             <HeaderSimple />
             {children}
             <Footer />
+            <WhatsAppButton />
             </MantineProvider>
         </ThemeRegistry>
         </body>

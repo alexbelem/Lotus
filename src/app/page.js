@@ -5,8 +5,12 @@ import {FeaturesCards} from "@/components/ServicesSection/FeaturesCards";
 export default function HomePage() {
     return (
         <>
-            <HeroSection />
-            <FeaturesCards />
+            <section id = "hero">
+                <HeroSection />
+            </section>
+            <section id = "features">
+                <FeaturesCards />
+            </section>
         </>
     );
 }

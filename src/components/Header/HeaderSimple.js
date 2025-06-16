@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const links = [
-    { link: '/about', label: 'Features' },
+    { link: '/about', label: 'Home' },
     { link: '/pricing', label: 'Pricing' },
     { link: '/learn', label: 'Learn' },
     { link: '/community', label: 'Community' },
@@ -40,8 +40,8 @@ export function HeaderSimple() {
 
                 <Link href="https://www.lotussmst.com.br/">
                     <Group gap="xs" align="center"> {/* 'align' centraliza verticalmente */}
-                        <Image src={logoLotus} alt="Ícone da clínica Lotus" height={45} width={50} style={{ objectFit: 'contain' }} />
-                        <Image src={textoLotus} alt="Texto da logo da clínica Lotus" height={25} width={100} style={{ objectFit: 'contain' }} />
+                        <Image src={logoLotus} alt="Ícone da clínica Lotus" height={60} width={60} style={{ objectFit: 'contain' }} />
+                        <Image src={textoLotus} alt="Texto da logo da clínica Lotus" height={100} width={100} style={{ objectFit: 'contain' }} />
                     </Group>
                 </Link>
 
