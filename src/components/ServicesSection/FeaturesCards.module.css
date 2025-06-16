@@ -1,0 +1,45 @@
+.title {
+    font-size: 34px;
+    font-weight: 500;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        font-size: 24px;
+    }
+}
+.featuresSection {
+    /* Cor "Cinza Suave" (#E9ECEF) da sua paleta "Serenidade Moderna" */
+    background-color: #E9ECEF;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.description {
+    max-width: 600px;
+    margin: auto;
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: var(--mantine-color-blue-filled);
+        width: 45px;
+        height: 2px;
+        margin-top: var(--mantine-spacing-sm);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card {
+    border: 1px solid #e9ecef;
+}
+
+.cardTitle {
+    &::after {
+        content: '';
+        display: block;
+        background-color: var(--mantine-color-blue-filled);
+        width: 45px;
+        height: 2px;
+        margin-top: var(--mantine-spacing-sm);
+    }
+}

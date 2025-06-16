@@ -1,0 +1,9 @@
+/* src/components/WhatsAppButton/WhatsAppButton.module.css */
+
+.floatingButton {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000; /* Garante que ele fique acima de outros elementos */
+    box-shadow: var(--mantine-shadow-md);
+}
