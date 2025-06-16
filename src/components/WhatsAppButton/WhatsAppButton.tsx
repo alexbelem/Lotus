@@ -6,8 +6,8 @@ import { ActionIcon, Tooltip } from '@mantine/core';
 import { IconBrandWhatsapp } from '@tabler/icons-react';
 import classes from './WhatsAppButton.module.css';
 
-// A LÓGICA FICA CENTRALIZADA AQUI
-const numeroTelefone = '5521999998888';
+
+const numeroTelefone = '5521967759758';
 const mensagemPadrao = 'Olá! Gostaria de marcar uma consulta!';
 
 // Adicionamos a prop 'variant' e 'message'
@@ -44,7 +44,7 @@ export function WhatsAppButton({ message, variant = 'floating' }) {
                 radius="xl"
                 variant="filled"
                 color="green"
-                // TESTE: Adicionando o estilo diretamente
+
                 style={{
                     position: 'fixed',
                     bottom: 25,

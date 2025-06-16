@@ -40,11 +40,14 @@ function HeroSection() {
                             <Button
                                 variant="contained"
                                 size="large"
+                                component= "a"
+                                href="#booking"
                                 sx={{
                                     backgroundColor: '#5B86A3',
                                     color: '#FFFFFF',
                                     borderRadius: '6px',
                                     textTransform: 'none',
+
                                     fontWeight: 'bold',
                                     padding: '10px 24px',
                                     transition: 'background-color 0.3s ease', // << TRANSIÇÃO SUAVE
