@@ -8,11 +8,11 @@ export default function HomePage() {
             <section id = "hero">
                 <HeroSection />
             </section>
-            <section id="booking">
-                <BookingSection />
-            </section>
             <section id = "features">
                 <FeaturesCards />
+            </section>
+            <section id="booking">
+                <BookingSection />
             </section>
         </>
     );

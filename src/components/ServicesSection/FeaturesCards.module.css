@@ -1,45 +1,28 @@
-.title {
-    font-size: 34px;
-    font-weight: 500;
+/* FeaturesCards.module.css */
 
-    @media (max-width: $mantine-breakpoint-sm) {
-        font-size: 24px;
-    }
-}
 .featuresSection {
-    /* Cor "Cinza Suave" (#E9ECEF) da sua paleta "Serenidade Moderna" */
     background-color: #E9ECEF;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.description {
-    max-width: 600px;
-    margin: auto;
-
-    &::after {
-        content: '';
-        display: block;
-        background-color: var(--mantine-color-blue-filled);
-        width: 45px;
-        height: 2px;
-        margin-top: var(--mantine-spacing-sm);
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
+/* A classe .card não precisa mais do position: relative */
 .card {
     border: 1px solid #e9ecef;
 }
 
+/* A classe .infoIcon foi removida pois não é mais necessária */
+
+.title {
+    font-size: var(--mantine-font-size-lg);
+    font-weight: 700;
+    margin-bottom: var(--mantine-spacing-xs);
+}
+
 .cardTitle {
-    &::after {
-        content: '';
-        display: block;
-        background-color: var(--mantine-color-blue-filled);
-        width: 45px;
-        height: 2px;
-        margin-top: var(--mantine-spacing-sm);
-    }
+    /* Estilos para o título do card, se houver */
+}
+
+.cardDescription {
+    white-space: pre-wrap;
 }
