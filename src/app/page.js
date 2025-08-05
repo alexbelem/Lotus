@@ -1,7 +1,7 @@
 // src/app/page.js
 import HeroSection from '../components/HeroSection/HeroSection';
 import {FeaturesCards} from "@/components/ServicesSection/FeaturesCards";
-import BookingSection from "@/components/Booking/BookingSection";
+//import BookingSection from "@/components/Booking/BookingSection";
 export default function HomePage() {
     return (
         <>
@@ -10,9 +10,6 @@ export default function HomePage() {
             </section>
             <section id = "features">
                 <FeaturesCards />
-            </section>
-            <section id="booking">
-                <BookingSection />
             </section>
         </>
     );

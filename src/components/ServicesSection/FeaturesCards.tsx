@@ -20,6 +20,7 @@ import {
 import classes from './FeaturesCards.module.css';
 
 // --- Conteúdo do Tooltip com Estilo Melhorado ---
+/*
 const ConveniosTooltipContent = () => {
     const theme = useMantineTheme();
     const convenios = [
@@ -51,25 +52,25 @@ const ConveniosTooltipContent = () => {
         </Table>
     );
 };
-
+*/
 
 // --- Dados dos Cards ---
 const mockdata = [
     {
-        title: 'Avaliação neuropsicológica',
-        description: 'um procedimento clínico...',
+        title: 'Psicanálise',
+        description: 'O paciente é convidado a falar sem censuras, possibilitando que os pensamentos reprimidos ganhem voz e que o sujeito escute a si mesmo.',
         icon: RiMentalHealthLine,
     },
     {
-        title: 'Reabilitação neuropsicológica ',
-        description: 'é um processo terapêutico especializado...',
+        title: 'Fenomenológica Existencial',
+        description: 'Escuta humanista que busca compreender " aqui e agora" o SER HUMANO em sua totalidade.',
         icon: IconUser,
     },
     {
-        title: 'Atendimento em convênio',
-        description: 'Aceitamos Saúde Caixa e Nuclep.',
+        title: 'Terapia Cognitivo Comportamental',
+        description: 'Escuta terapêutica estruturada com objetivo em identificar e modificar padrões de pensamentos disfuncionais..',
         icon: MdOutlineHealthAndSafety,
-        tooltipContent: ConveniosTooltipContent,
+        //tooltipContent: ConveniosTooltipContent,
     },
 ];
 
@@ -86,18 +87,6 @@ export function FeaturesCards() {
                 <Text fz="lg" fw={500} className={classes.cardTitle}>
                     {feature.title}
                 </Text>
-                {feature.tooltipContent && (
-                    <Tooltip
-                        label={<feature.tooltipContent />}
-                        position="bottom"
-                        withArrow
-                        width={320}
-                        multiline
-                        events={{ hover: true, focus: true, touch: true }}
-                    >
-                        <IconInfoCircle size={20} stroke={1.5} style={{ display: 'block', cursor: 'help' }} />
-                    </Tooltip>
-                )}
             </Group>
 
             <Text fz="sm" c="dimmed" mt="sm" className={classes.cardDescription}>
@@ -107,19 +96,14 @@ export function FeaturesCards() {
     ));
 
     return (
-        <div className={classes.featuresSection}>
+        <div id="featuresCards" className={classes.featuresSection}>
             <Container size="lg" py="xl">
                 <Group justify="center">
-                    <Badge variant="filled" size="lg">
-                        Trabalhamos com
+                    <Badge variant="filled" size="xl" style={{ textTransform: 'none' }}>
+                        Nossos serviços!
                     </Badge>
                 </Group>
-                <Title order={2} className={classes.title} ta="center" mt="sm">
-                    Terapia Cognitivo-Comportamental (TCC)
-                </Title>
-                <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                    é uma abordagem psicológica estruturada...
-                </Text>
+
                 <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
                     {features}
                 </SimpleGrid>
