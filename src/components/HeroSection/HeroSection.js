@@ -6,6 +6,20 @@ import Image from 'next/image';
 import heroImage from '../../assets/psi_notas.jpg';
 
 function HeroSection() {
+    // 1. Definimos os dados do WhatsApp aqui, como no seu outro componente.
+    const numeroTelefone = '5521967759758';
+    const mensagemPadrao = 'Olá! Gostaria de marcar uma consulta!';
+    const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagemPadrao)}`;
+
+    // Função de rolagem suave (mantida para o botão "Saiba Mais")
+    const handleScroll = (event, targetId) => {
+        event.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <Box component="section" id="heroe" sx={{ py: 8, bgcolor: 'background.paper' }}>
             <Container maxWidth="lg">
@@ -15,7 +29,6 @@ function HeroSection() {
                     gap: 5,
                     flexDirection: { xs: 'column-reverse', md: 'row' }
                 }}>
-
                     <Box sx={{
                         width: { xs: '100%', md: '50%' },
                         textAlign: { xs: 'center', md: 'left' }
@@ -36,21 +49,22 @@ function HeroSection() {
                             spacing={2}
                             justifyContent={{ xs: 'center', md: 'flex-start' }}
                         >
-                            {/* BOTÃO PRINCIPAL COM TRANSIÇÃO */}
+                            {/* ===== BOTÃO AGENDAR CONSULTA (MODIFICADO) ===== */}
                             <Button
                                 variant="contained"
                                 size="large"
-                                component= "a"
-                                href="#booking"
+                                component="a" // Mantém como um link
+                                href={urlWhatsApp} // 2. Aponta para a URL do WhatsApp
+                                target="_blank" // 3. Abre em uma nova aba
+                                rel="noopener noreferrer" // 4. Boa prática de segurança para nova aba
                                 sx={{
                                     backgroundColor: '#5B86A3',
                                     color: '#FFFFFF',
                                     borderRadius: '6px',
                                     textTransform: 'none',
-
                                     fontWeight: 'bold',
                                     padding: '10px 24px',
-                                    transition: 'background-color 0.3s ease', // << TRANSIÇÃO SUAVE
+                                    transition: 'background-color 0.3s ease',
                                     '&:hover': {
                                         backgroundColor: '#4A6F8A',
                                     },
@@ -58,21 +72,24 @@ function HeroSection() {
                             >
                                 Agendar Consulta
                             </Button>
-                            {/* BOTÃO SECUNDÁRIO COM COR DE DESTAQUE E TRANSIÇÃO */}
+
+                            {/* BOTÃO SAIBA MAIS (Permanece com a rolagem suave) */}
                             <Button
                                 variant="outlined"
                                 size="large"
+                                href="#featuresCards"
+                                onClick={(e) => handleScroll(e, 'featuresCards')}
                                 sx={{
                                     borderRadius: '6px',
                                     textTransform: 'none',
                                     fontWeight: 'bold',
                                     padding: '10px 24px',
-                                    borderColor: '#E3A39A', // << COR DE DESTAQUE
-                                    color: '#E3A39A',       // << COR DE DESTAQUE
-                                    transition: 'background-color 0.3s ease, color 0.3s ease', // << TRANSIÇÃO SUAVE
+                                    borderColor: '#E3A39A',
+                                    color: '#E3A39A',
+                                    transition: 'background-color 0.3s ease, color 0.3s ease',
                                     '&:hover': {
-                                        backgroundColor: '#E3A39A', // Preenche com a cor de destaque
-                                        color: '#FFFFFF',          // Texto fica branco
+                                        backgroundColor: '#E3A39A',
+                                        color: '#FFFFFF',
                                     },
                                 }}
                             >
